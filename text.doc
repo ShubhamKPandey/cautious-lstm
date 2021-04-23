@@ -1,0 +1,37 @@
+…or create a new repository on the command line
+echo "# cautious-lstm" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ShubhamKPandey/cautious-lstm.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/ShubhamKPandey/cautious-lstm.git
+git branch -M main
+git push -u origin main
+
+
+We have to make contextual word vectors.
+For this we'll use RNNS. These are recurrent
+neural networks. They relu on sequential information
+in which one information vector comes just after
+the other vector and there is relation between sequential
+relation between these vectors. It is said that they also
+have a memory in form of weights and by the impact of the
+the state modules which comprise the architecture.
+Therefore they are ideal for text and speech analysis.
+LSTM is a widely used lstm model.
+Let us say that there is a feed forward
+neural network represented by A. It gets the input
+"xt" at time step t based on which it calculates "ht".
+Like this way we input each word and try to calculate the
+next word and based on the estimated word vector we
+further calculate the loss function and gradually 
+calculate the gradients. There can be many varities to
+it. These can be : - 
+1. one to one
+2. one to many
+3. many to one
+4. many to many
+5. manty to many
