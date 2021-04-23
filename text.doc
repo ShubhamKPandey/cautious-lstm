@@ -35,3 +35,5 @@ it. These can be : -
 3. many to one
 4. many to many
 5. manty to many
+
+https://towardsdatascience.com/multi-class-text-classification-with-lstm-using-tensorflow-2-0-d88627c10a35
