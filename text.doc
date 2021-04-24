@@ -1,3 +1,6 @@
+# cautious-lstm
+
+A simple implementation of the LSTMgit 
 …or create a new repository on the command line
 echo "# cautious-lstm" >> README.md
 git init
@@ -35,5 +38,18 @@ it. These can be : -
 3. many to one
 4. many to many
 5. manty to many
+ 
 
-https://towardsdatascience.com/multi-class-text-classification-with-lstm-using-tensorflow-2-0-d88627c10a35
+The role of tokenizer is very important to understand. In this
+case the tokenizer will take 5000 most common words. The term 
+"oov_token" takes special value whenever an unseen word if 
+encountered. The words which are not in the vocabulary or the
+"word_index" would be replaced with <OOV>.
+
+We should explore the structure of our article after
+padding. We should look how the article looks 
+like after padding. Many words have been replaced
+with "<OOV>" because they did not make to top 
+5000. 
+
+After this let's implement the embedding layer 
